@@ -1,0 +1,33 @@
+.homecontainer1{
+  display: flex;
+}
+
+.user-list-container {
+    padding: 30px 0px;
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 50px;
+    
+  }
+  
+  .user-profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .user-profile-link h3 {
+    padding: 15px 18px;
+    background-color: #d3d3d3;
+    font-size: 25px;
+    border-radius: 50%;
+    
+  }
+  
+  .user-profile-link h5 {
+    margin: 0px 10px;
+    font-size: 22px;
+  }
