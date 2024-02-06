@@ -19,7 +19,7 @@ const QuestionsDetails = () => {
   const User=useSelector((state)=>(state.currentUserReducer))
   const dispatch=useDispatch()
   const location=useLocation()
-  const url="https://stackoverflowclonems.netlify.app"
+  const url="http://localhost:5000"
 
   const handlePostAns=(e,answerLength)=>{
     e.preventDefault()
