@@ -1,5 +1,6 @@
 .main-bar{
-    width: calc(100%-300px);
+    width: 100%;
+    flex-wrap: wrap;
     float: left;
     padding: 0;
     margin: 25px 0px;
@@ -39,7 +40,7 @@
 }
 
 .display-question-container .display-votes-ans{
-    padding: 20px;
+    padding: 10px;
 }
 .display-question-container .display-votes-ans p{
     margin: 0;
@@ -86,3 +87,16 @@
 .display-tags-time .display-time{
     font-size: 13px;
 }
+
+
+@media screen and (max-width: 1020px) {
+    .main-bar {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 740px) {
+    .display-question-container .display-votes-ans {
+      padding: 10px;
+    }
+  }

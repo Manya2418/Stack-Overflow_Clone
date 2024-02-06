@@ -13,15 +13,6 @@ const AskQuestion = () => {
   const User=useSelector((state)=>state.currentUserReducer)
   const navigate=useNavigate()
 
-  // const handleSubmit=(e)=>{
-  //   e.preventDefault()
-  //   dispatch(askQuestion({
-  //     questionTitle,
-  //     questionBody,
-  //     questionTags,
-  //     userPosted:User.result.name,
-  //     userId:User?.result?._id},navigate))}
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (User) {

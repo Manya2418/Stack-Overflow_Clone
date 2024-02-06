@@ -1,3 +1,6 @@
+*{
+    margin: 0%;
+}
 .main-nav{
     min-height: 50px;
     width: 100%;
@@ -7,6 +10,7 @@
     z-index: 5;
     top: 0%;
     left: 0%;
+
     display: flex;
     background-color: antiquewhite;
     align-items: center;

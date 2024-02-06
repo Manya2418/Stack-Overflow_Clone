@@ -19,7 +19,7 @@ const QuestionsDetails = () => {
   const User=useSelector((state)=>(state.currentUserReducer))
   const dispatch=useDispatch()
   const location=useLocation()
-  const url="http://localhost:3000/"
+  const url="https://stackoverflowclonems.netlify.app"
 
   const handlePostAns=(e,answerLength)=>{
     e.preventDefault()
@@ -68,7 +68,7 @@ const QuestionsDetails = () => {
                     <div key={question._id}>
                         <section className='question-details-container'>
                             <h1>{question.questionTitle}</h1>
-                            <div className='question-details-container-2'>
+                            <div className='question-details-container-2' >
                                 <div className='question-votes'>
                                     <img src={upvote} alt=''  width='18' className='vote-icon' onClick={handleUpVote}></img>
                                     <p>{question.upVote.length-question.downVote.length}</p>
@@ -84,7 +84,7 @@ const QuestionsDetails = () => {
                                       })
                                     }
                                   </div>
-                                  <div className='question-actions-user'>
+                                  <div className='question-actions-user' >
                                     <div>
                                       <button type='button' onClick={handleShare}>Share</button>
                                       {
@@ -94,7 +94,7 @@ const QuestionsDetails = () => {
                                       }
                                      
                                     </div>
-                                    <div>
+                                    <div >
                                       <p>asked {moment(question.askedOn).fromNow()}</p>
                                       <Link to={`/Users/${question.userId}`} className='user-link' style={{color:"#0006d8"}}>
                                         <Avatar backgroundColor="orange" px="8px" py="5px" textDecoration="none">{question.userPosted.charAt(0).toUpperCase()}</Avatar>
